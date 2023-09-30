@@ -48,7 +48,7 @@
   .navBar .menu {
     position: absolute;
     width: 70%;
-    top: 8rem;
+    top: -100rem;
     right: 50%;
     left: 50%;
     transform: translate(-50%);
@@ -71,4 +71,21 @@
     color: var(--primaryColor);
     border-bottom: 1.5px solid var(--primaryColor);
   }
+}
+.navBar .menuIcon, .navBar .closeIcon {
+  font-size: var(--h1FontSize);
+}
+.navBar .menuIcon:hover, .navBar .closeIcon:hover {
+  color: var(--primaryColor);
+}
+.navBar .closeIcon {
+  position: absolute;
+  bottom: -15px;
+  right: 50%;
+  left: 50%;
+  color: var(--blackColor);
+  transform: translate(-50%);
+}
+.navBar .showNavBar {
+  top: 8rem;
 }/*# sourceMappingURL=Navbar.css.map */
