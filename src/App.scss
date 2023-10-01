@@ -6,9 +6,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 //All project colors
-root{
-    --primaryColor: hsl(14, 90%, 53%);
-    --primaryColorLight: hsl(14, 96%, 91%);
+:root{
+    --primaryColor: hsl(262, 90%, 53%);
+    --primaryColorLight: hsl(250, 94%, 87%);
     --bgColor: hsl(0, 0%, 100%);
     --formColor: hsl(20, 42%, 87%);
     --whiteColor: hsl(0, 0%, 100%);
@@ -26,7 +26,6 @@ root{
     --smallFontSize: 0.813rem;
     --smallestFontSize: 0.75rem;
     --borderRadius: 3rem;
-
 }
 
 body{
@@ -38,7 +37,7 @@ body{
     align-items: center;
 }
 .grid{
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 1.5rem;
 }

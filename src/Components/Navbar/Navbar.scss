@@ -3,7 +3,7 @@
 //All project colors
 :root{
     --primaryColor: hsl(262, 90%, 53%);
-    --primaryColorLight: hsl(14, 96%, 91%);
+    --primaryColorLight: hsl(250, 94%, 87%);
     --bgColor: hsl(0, 0%, 100%);
     --formColor: hsl(20, 42%, 87%);
     --whiteColor: hsl(0, 0%, 100%);
@@ -30,9 +30,10 @@
     width: 100%;
     padding: 1.5rem 2rem;
     position: fixed;
-    border-bottom: 1.5px;
-    background: #a06ed2;
+    border-bottom: 1.5px solid rgb(200, 200, 200);
+    //background: #a06ed2;
     backdrop-filter: blur (5px);
+    z-index: 1000;
 
     .logoDiv{
         display: flex;
