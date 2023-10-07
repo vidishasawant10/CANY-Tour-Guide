@@ -7,6 +7,82 @@ import {BiSearchAlt2} from 'react-icons/bi'
 import {TiLocation} from 'react-icons/ti'
 
 import image1 from '../../Assets/SanFranscisoBridge.webp'
+import image2 from '../../Assets/Japaneseteagarden.jpg'
+import image3 from '../../Assets/LakeTahoe.jpg'
+import image4 from '../../Assets/napavalley.jpg'
+import image5 from '../../Assets/Palmspringaerial.jpg'
+import image6 from '../../Assets/McWayFalls.jpeg'
+import image7 from '../../Assets/Disneyland.jpeg'
+import image8 from '../../Assets/hollywoodla.jpeg'
+import image9 from '../../Assets/Yosemite.webp'
+
+
+//Lets create an array that is gonna contain all destination data and we loop through
+const places = [
+  {
+    id: 1,
+    img: image1,
+    name: 'San Franscisco Bridge',
+    location: 'San Franscisco, CA',
+    rating: 4.7,
+  },
+  {
+    id: 2,
+    img: image2,
+    name: 'Japanese Tea Garden',
+    location: 'San Mateo, CA',
+    rating: 4.7,
+  },
+  {
+    id: 3,
+    img: image3,
+    name: 'Lake Tahoe',
+    location: 'Sierra Nevada, CA',
+    rating: 4.7,
+  },
+  {
+    id: 4,
+    img: image4,
+    name: 'Napa Valley',
+    location: 'Napa, CA',
+    rating: 4.7,
+  },
+  {
+    id: 5,
+    img: image5,
+    name: 'Palm Spring Aerial Tramway',
+    location: 'Palm Springs, CA',
+    rating: 4.7,
+  },
+  {
+    id: 6,
+    img: image6,
+    name: 'McWay Falls',
+    location: 'Big Sur, CA',
+    rating: 4.7,
+  },
+  {
+    id: 7,
+    img: image7,
+    name: 'Disneyland Park',
+    location: 'Anaheim, CA',
+    rating: 4.7,
+  },
+  {
+    id: 8,
+    img: image8,
+    name: 'Hollywood Palm Trees',
+    location: 'Los Angeles, CA',
+    rating: 4.7,
+  },
+  {
+    id: 9,
+    img: image9,
+    name: 'Yosemite National Park',
+    location: 'Sierra Nevada, CA',
+    rating: 4.7,
+  }
+]
 
 const Places = () => {
   return (
@@ -50,25 +126,30 @@ const Places = () => {
         </div>
 
         <div className="placesContainer grid">
-          <div className="singlePlace">
+          {places.map((places) => {
+            return(
+              <div className="singlePlace" key={places.id}>
             <div className="imgDiv">
-              <img src={image1} alt = 'Place Image'></img>
+              <img src={places.img} alt = 'Place Image'></img>
               <div className="placeInfo flex">
                 <div className="text">
                   <span className='name'>
-                    San Franscisco Bridge
+                    {places.name}
                   </span>
                   <p className='flex'> 
                   <TiLocation className = 'icon'/>
-                  San Franscisco, California
+                  {places.location}
                   </p>
                   </div>
                   <span className="rating">
-                    4.6
+                    {places.rating}
                   </span>
               </div>
             </div>
           </div>
+            )
+          })}
+          
         </div>
       </div>
     </div>

@@ -21,10 +21,10 @@ function App() {
       <Home/>
       <Middle/>
       <Places/>
-      {/*<Footer/>     
       <Portfolio/>
-      <Questions/>
       <Reviews/>
+      <Questions/>
+      {/*<Footer/>     
       <Subscribe/>*/}
    </div>
 
