@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Video from '../../Assets/Background.mp4'
-import {AiOutlineSwapRight} from 'react-icons/ai'
+import {BsArrowRight} from 'react-icons/bs'
 
 const Home = () => {
   return(
@@ -14,7 +14,7 @@ const Home = () => {
         <p>Discover the world's most adventourous nature,
           life is short for a trip.
         </p>
-        <button className='btn flex'>GET STARTED <AiOutlineSwapRight className='icon'/></button>
+        <button className='btn flex'>GET STARTED <BsArrowRight className='icon'/></button>
       </div>
       <div className="popularPlaces">
         <div className="content">
